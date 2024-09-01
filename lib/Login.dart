@@ -12,7 +12,7 @@ class _MyLoginState extends State<MyLogin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFE5FAFB),
+      backgroundColor: Colors.white,
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -38,7 +38,14 @@ class _MyLoginState extends State<MyLogin> {
                       fontWeight: FontWeight.bold)),
             ),
           ),
-          SizedBox(height: 55),
+          SizedBox(height: 15),
+          Center(
+            child: Image.asset(
+              "assets/logo.png",
+              alignment: Alignment.bottomCenter,
+            ),
+          ),
+          SizedBox(height: 35),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
